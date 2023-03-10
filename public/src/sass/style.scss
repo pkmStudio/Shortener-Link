@@ -1,0 +1,273 @@
+// @import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+body {
+	font-weight: 400;
+	font-family: "Yanone Kaffeesatz", sans-serif;
+	line-height: 1.2;
+	color: #333;
+   font-size: 16px;
+	background-color: rgb(240, 240, 240);
+   // position: relative;
+   display: flex;
+   flex-direction: column;
+}
+main {
+   flex-grow: 1;
+}
+.lock {
+	position: fixed;
+	overflow-y: hidden;
+	padding-right: 15px;
+}
+// Для 1200 +
+.container {
+	padding: 0 15px;
+	margin: 0 auto;
+	max-width: 1170px;
+}
+
+.logo {
+   width: 50px;
+   height: 50px;
+}
+
+.section {
+   margin-bottom: 30px;
+}
+.section-title {
+   font-size: 24px;
+   margin-bottom: 30px;
+}
+
+.d-none {
+   display: none;
+}
+
+.button {
+   padding: 10px 15px;
+   border-radius: 10px;
+}
+
+.block-error {
+   color: red;
+   font-size: 20px;
+}
+// Header
+.header {
+   max-height: 100px;
+   background-color: #00d0ff;
+   margin-bottom: 30px;
+
+   // .header__body
+   &__body {
+      padding: 10px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   // .header__logo
+   &__logo {
+      display: flex;
+      align-items: center;
+      gap: 0 20px;
+   }
+}
+
+.nav {
+   display: flex;
+   justify-content: space-between;
+   gap: 0 20px;
+
+   // .nav__list
+   &__list {
+      &:hover {
+         color:rgb(0, 83, 83);
+      }
+   }
+}
+
+// Footer
+.footer {
+   max-height: 100px;
+   background-color: #00d0ff;
+   // position: absolute;
+   // bottom: 0;
+   // left: 0;
+   // right: 0;
+   margin-top: -30px;
+
+   // .footer__body
+   &__body {
+      padding: 10px 0;
+      text-align: center;
+   }
+
+   // .footer__text
+   &__text {
+      font-size: 20px;
+   }
+}
+
+// Register-Section/ Login-Section
+.form {
+   width: calc(600/1200 * 100%);
+   margin: 0 auto;
+   padding: 15px;
+   border-radius: 10px;
+   border: 1px solid silver;
+   background-color: #fff;
+   display: flex;
+   flex-direction: column;
+   gap: 20px 0;
+   align-items: start;
+
+   // .form__title
+   &__title {
+      width: 100%;
+   }
+
+   // .form__input
+   &__input {
+      width: calc(580/600 * 100%);
+      background-color: #fff;
+      padding: 5px 10px;
+      border-radius: 10px;
+      border: 1px solid silver;
+      margin-left: 10px;
+      margin-top: 10px;
+   }
+
+   &__textarea {
+      width: calc(580/600 * 100%);
+      background-color: #fff;
+      padding: 5px 10px;
+      border-radius: 10px;
+      border: 1px solid silver;
+      margin-left: 10px;
+      margin-top: 10px;
+      resize: vertical;
+   }
+
+   // .form__button
+   &__button {
+      background-color: rgb(157, 157, 253);
+      align-self: end;
+   }
+}
+
+// Personal-Area - Section
+.personal-area {
+
+   // .personal-area__body
+   &__body {
+   }
+
+   // .personal-area__title
+   &__title {
+   }
+
+   // .personal-area__text
+   &__text {
+      font-size: 36px;
+   }
+
+   // .personal-area__button
+   &__button {
+      background-color: red;
+      color: #fff;
+   }
+}
+
+// Short-Link Section
+.short-link {
+
+   // .short-link__form
+   &__form {
+      margin-bottom: 50px;
+   }
+
+   // .short-link__links-block
+   &__links-block {
+      display: flex;
+      flex-direction: column;
+      gap: 30px 0;
+   }
+
+   // .short-link__title
+   &__title {
+      font-size: 24px;
+   }
+
+   // .short-link__link-block
+   &__link-block {
+      width: calc(600/1200 * 100%);
+      margin: 0 auto;
+      padding: 15px;
+      background-color: lightgray;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      gap:15px 0;
+   }
+
+   // .short-link__text
+   &__text {
+      font-size: 20px;
+   }
+
+   // .short-link__link
+   &__link {
+      color: violet;
+      transition: all 0.6s ease;
+      
+      &:hover {
+         color: #333;
+      }
+   }
+
+   // .short-link__button
+   &__button {
+      background-color:lightblue;
+      align-self: flex-end;
+   }
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1199px) {
+   .container {
+      padding: 0 15px;
+      margin: 0 auto;
+      width: 960px;
+   }
+}
+
+@media screen and (max-width: 991px) {
+   .container {
+      padding: 0 15px;
+      margin: 0 auto;
+      width: 720px;
+   }
+}
+
+@media screen and (max-width: 767px) {
+   .container {
+      padding: 0 15px;
+      margin: 0 auto;
+      width: 540px;
+   }
+}
+
+@media screen and (max-width: 576px) {
+   .container {
+      padding: 0 15px;
+      margin: 0 auto;
+      width: 100%;
+   }
+}

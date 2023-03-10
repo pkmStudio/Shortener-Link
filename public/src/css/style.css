@@ -1,0 +1,247 @@
+body {
+  font-weight: 400;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  line-height: 1.2;
+  color: #333;
+  font-size: 16px;
+  background-color: rgb(240, 240, 240);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.lock {
+  position: fixed;
+  overflow-y: hidden;
+  padding-right: 15px;
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.section-title {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.d-none {
+  display: none;
+}
+
+.button {
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.block-error {
+  color: red;
+  font-size: 20px;
+}
+
+.header {
+  max-height: 100px;
+  background-color: #00d0ff;
+  margin-bottom: 30px;
+}
+.header__body {
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0 20px;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0 20px;
+}
+.nav__list:hover {
+  color: rgb(0, 83, 83);
+}
+
+.footer {
+  max-height: 100px;
+  background-color: #00d0ff;
+  margin-top: -30px;
+}
+.footer__body {
+  padding: 10px 0;
+  text-align: center;
+}
+.footer__text {
+  font-size: 20px;
+}
+
+.form {
+  width: 50%;
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid silver;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px 0;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+.form__title {
+  width: 100%;
+}
+.form__input {
+  width: 96.6666666667%;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 1px solid silver;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.form__textarea {
+  width: 96.6666666667%;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 1px solid silver;
+  margin-left: 10px;
+  margin-top: 10px;
+  resize: vertical;
+}
+.form__button {
+  background-color: rgb(157, 157, 253);
+  -ms-flex-item-align: end;
+      align-self: end;
+}
+
+.personal-area__text {
+  font-size: 36px;
+}
+.personal-area__button {
+  background-color: red;
+  color: #fff;
+}
+
+.short-link__form {
+  margin-bottom: 50px;
+}
+.short-link__links-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px 0;
+}
+.short-link__title {
+  font-size: 24px;
+}
+.short-link__link-block {
+  width: 50%;
+  margin: 0 auto;
+  padding: 15px;
+  background-color: lightgray;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px 0;
+}
+.short-link__text {
+  font-size: 20px;
+}
+.short-link__link {
+  color: violet;
+  -webkit-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+.short-link__link:hover {
+  color: #333;
+}
+.short-link__button {
+  background-color: lightblue;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+@media screen and (max-width: 1199px) {
+  .container {
+    padding: 0 15px;
+    margin: 0 auto;
+    width: 960px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .container {
+    padding: 0 15px;
+    margin: 0 auto;
+    width: 720px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 0 15px;
+    margin: 0 auto;
+    width: 540px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    padding: 0 15px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
